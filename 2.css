@@ -1,0 +1,148 @@
+body {
+  font-style: Arial;
+  background: black;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.first-text {
+  font-size: 4.0rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: rei1;
+  animation-duration: 5s;
+  color: white;
+}
+
+.second-text {
+  font-size: 3.0rem;
+  position: absolute;
+  top: 8rem;
+  opacity: 0;
+  animation-name: rei2;
+  animation-delay: 4.5s;
+  animation-duration: 5s;
+  color: white;
+}
+
+.third-text {
+  transform: rotate(-90deg);
+  font-size: 2.0rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: rei3;
+  animation-delay: 9s;
+  animation-duration: 5s;
+  color: #d988e7;
+  white-space: nowrap;
+}
+
+.fourth-text {
+  font-size: 3.0rem;
+  position: absolute;
+  top: 10rem;
+  left: 10%;
+  opacity: 0;
+  color: #fe8fb6;
+  animation-name: rei4;
+  animation-delay: 13.5s;
+  animation-duration: 5s;
+}
+
+.fifth-text {
+  font-size: 3.5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #d53b3b;
+  animation-name: rei5;
+  animation-delay: 17.5s;
+  animation-duration: 19.5s;
+}
+
+@keyframes rei1 {
+  0% {
+    top: -3rem;
+    opacity: 0;
+  }
+  75% {    
+    top: 25%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rei2 {
+  0% {
+    top: -3rem;
+    opacity: 0;
+  }
+  75% {
+    top: 45%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rei3 {
+  0% {
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    top: 45%;;
+    opacity: 1;
+  }
+
+  100% {
+    
+    opacity: 0;
+  }
+}
+
+@keyframes rei4 {
+  0% {
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    right: 10rem;
+    opacity: 0;
+  }
+}
+
+@keyframes rei5 {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
